@@ -1,0 +1,20 @@
+{
+  "name": "leetcode_problem_solving",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudaynazarovbabageldi/leetcode_problem_solving.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hudaynazarovbabageldi/leetcode_problem_solving/issues"
+  },
+  "homepage": "https://github.com/hudaynazarovbabageldi/leetcode_problem_solving#readme",
+  "description": ""
+}
