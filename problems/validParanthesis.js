@@ -20,7 +20,7 @@ var isValid = function (s) {
     }
   }
 
-  return true;
+  return stack.length === 0;
 };
 
-console.log("isValid: ", isValid("([])"));
+console.log("isValid: ", isValid("["));
