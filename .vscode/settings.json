@@ -1,0 +1,9 @@
+{
+  "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+  "github.copilot.chat.copilotDebugCommand.enabled": false,
+  "github.copilot.chat.agent.autoFix": false,
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "github.copilot.enable": {
+    "*": false
+  }
+}

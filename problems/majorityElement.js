@@ -11,6 +11,7 @@ var majorityElement = function (nums) {
       map[el] = 1;
     }
   }
+  // Select first element with max count
   let majorityCount = 0;
   let majorityElement = nums[0];
   for (let el in map) {
