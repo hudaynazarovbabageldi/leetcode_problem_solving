@@ -1,37 +1,32 @@
-/**
- * @param {string} digits
- * @return {string[]}
- */
-
-// Example 1:
-
-// Input: digits = "23"
-// Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
-// Example 2:
-
-// Input: digits = ""
-// Output: []
-// Example 3:
-
-// Input: digits = "2"
-// Output: ["a","b","c"]
-
-const buttons = {
-  1: "",
-  2: "abc",
-  3: "def",
-  4: "ghi",
-  5: "jkl",
-  6: "mno",
-  7: "pqrs",
-  8: "tuv",
-  9: "wxyz",
-};
-
 var letterCombinations = function (digits) {
-  let length = digits.length;
-  let str = "";
-  for(let i = 0; i < dig)
-};
+  if (!digits) return [];
 
-console.log(letterCombinations("digit"));
+  const map = {
+    2: ["a", "b", "c"],
+    3: ["d", "e", "f"],
+    4: ["g", "h", "i"],
+    5: ["j", "k", "l"],
+    6: ["m", "n", "o"],
+    7: ["p", "q", "r", "s"],
+    8: ["t", "u", "v"],
+    9: ["w", "x", "y", "z"],
+  };
+
+  const result = [];
+
+  function backtrack(index, current) {
+    if (index === digits.length) {
+      result.push(current);
+      return;
+    }
+
+    const letters = map[digits[index]];
+
+    for (let letter of letters) {
+      backtrack(index + 1, current + letter);
+    }
+  }
+
+  backtrack(0, "");
+  return result;
+};
